@@ -1,6 +1,6 @@
 # AI Dev 26 x SF — Schedule
 
-_Scraped from https://ai-dev.deeplearning.ai/ on 2026-04-27T02:32:27.335Z_
+_Scraped from https://ai-dev.deeplearning.ai/ on 2026-04-27T04:37:24.600Z_
 
 
 ## April 28-29, 2026
