@@ -19,11 +19,13 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Check conference window (Apr 28 16:00 UTC – Apr 30 01:00 UTC)
+      - name: Check conference window (Apr 27 13:00 UTC – Apr 30 01:00 UTC)
         id: window
         run: |
+          # Window starts 6am PT Mon Apr 27 (catch day-before changes), ends 6pm PT Wed Apr 29.
+          # Pacific is on PDT (UTC-7) in late April.
           NOW=$(date -u +%s)
-          START=$(date -u -d "2026-04-28T16:00:00Z" +%s)
+          START=$(date -u -d "2026-04-27T13:00:00Z" +%s)
           END=$(date -u -d "2026-04-30T01:00:00Z" +%s)
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "Manual trigger; running regardless of window."
