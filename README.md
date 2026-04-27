@@ -33,4 +33,4 @@ Flags:
 - This is a one-time artifact for this specific event. Generic site-to-Markdown tools exist (Firecrawl); for an accordion-gated single-page schedule and a 30-minute window, a 230-line script was more fun, in flow, and on theme.
 
 ## Author 
-I'm Quinn Redwoods, a CS student, career changer, internship seeker, contemplator and explorer of AI. Hope to see you at the conference! Feel free say hi via my [site](https://qredwoods.com) or [LinkedIn](https://linkedin.com/in/qredwoods) an 
+I'm Quinn Redwoods, a CS student, career changer, internship seeker, contemplator and explorer of AI. Hope to see you at the conference! Feel free say hi via my [site](https://qredwoods.com) or [LinkedIn](https://linkedin.com/in/qredwoods).
