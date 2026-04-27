@@ -1,0 +1,72 @@
+name: Watch schedule
+
+# Re-runs the scraper every 30 minutes during the conference window.
+# Commits schedule.md only if it changed — git history becomes the changelog.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch-schedule
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check conference window (Apr 28 16:00 UTC – Apr 30 01:00 UTC)
+        id: window
+        run: |
+          NOW=$(date -u +%s)
+          START=$(date -u -d "2026-04-28T16:00:00Z" +%s)
+          END=$(date -u -d "2026-04-30T01:00:00Z" +%s)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual trigger; running regardless of window."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          elif [ "$NOW" -lt "$START" ] || [ "$NOW" -gt "$END" ]; then
+            echo "Outside conference window; skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Inside conference window; running."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.window.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: steps.window.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        if: steps.window.outputs.skip != 'true'
+        run: npm install
+
+      - name: Install Chromium
+        if: steps.window.outputs.skip != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Scrape
+        if: steps.window.outputs.skip != 'true'
+        run: npm run scrape
+
+      - name: Commit if changed
+        if: steps.window.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet schedule.md; then
+            echo "No changes."
+          else
+            git add schedule.md
+            git commit -m "schedule: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

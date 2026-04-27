@@ -1,0 +1,14 @@
+{
+  "name": "ai-dev-26-sf-schedule",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Scrape the AI Dev 26 SF conference schedule into Markdown.",
+  "scripts": {
+    "scrape": "node scrape.cjs",
+    "scrape:debug": "node scrape.cjs --debug",
+    "scrape:headed": "node scrape.cjs --headed"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
