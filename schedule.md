@@ -376,10 +376,10 @@ _Andrew Filev (Zencoder)_
 Learn how decomposing tasks into pipelines and dynamically routing them across models improves quality, reduces cost, and makes AI systems more reliable.
 
 **5:00 PM - 5:20 PM** · 20 min · _Stage 2_  
-The Next Era of Local and Open-Source AI - Signals and Catalysts of the Major Shift Underway
+VibeML: Build your specialized AI model from a prompt – in hours, not months
 _Manos Koukoumidis (Oumi), Stefan Webb (Oumi)_
 
-Most organizations began their GenAI journey with off-the-shelf, black-box models like ChatGPT, but quickly realized that their solution was unreliable to productionize or just expensive and slow to scale up. To gain a strong edge, leading developers turned to building custom AI models — seeking better performance, lower latency, and tighter cost control — but found the process slow, expensive, and dependent on scarce AI expertise. That dynamic is now changing fast as new platforms are democratizing custom AI development, from model evaluation and data synthesis to training and deployment.
+The next major shift in enterprise AI is underway; enterprises are moving from generic AI they rent to specialized AI they own. The benefits are clear: higher quality, dramatically lower costs, full control, and a quality improvement flywheel while in production. But, building specialized AI models has been prohibitively hard; each use case requires months of effort and deep AI expertise. Well, it used to. VibeML is enabling engineers to build specialized AI models automatically from a prompt, in minutes. An AI agent builds your AI model end-to-end; evaluation, data synthesis, training and repeat. This talk will demonstrate how VibeML can give deep AI experts superpowers while enabling non-experts as well.
 
 **4:40 PM - 5:10 PM** · 30 min · _Stage 3_  
 Building Recurring, Governed, and Embedded Enterprise Workflows
