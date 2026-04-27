@@ -211,7 +211,7 @@ const TIME_RE_BODY = String.raw`\d{1,2}:\d{2}\s*(?:AM|PM)\s*[-–]\s*\d{1,2}:\d{
   for (const h of data.headers) items.push({ y: h.y, type: 'header', header: h });
   items.sort((a, b) => a.y - b.y);
 
-  let md = `# AI Dev 26 x SF — Schedule\n\n_Scraped from ${URL} on ${new Date().toISOString()}_\n\n`;
+  let md = `# AI Dev 26 x SF — Schedule\n\n_Scraped from ${URL}_\n\n`;
   let lastHeaderText = '';
   for (const it of items) {
     if (it.type === 'header') {
