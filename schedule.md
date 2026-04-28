@@ -25,10 +25,15 @@ When software becomes tokens, the advantage shifts to execution velocity. Anush 
 
 
 **9:25 AM - 9:40 AM**  
-Keynote: The Sorcerer's Apprentice Problem: Why Agent Safety Lives Outside the Agent
+It's Time to Be Right
 _Marc Brooker (AWS)_
 
-Agents are valuable precisely because they're creative, persistent, and adaptive. But that's also what makes them dangerous. The same flexibility that lets an agent handle unexpected edge cases lets it route around the guardrails we embed inside it. Prompt-based safety controls pit an agent's constraints against its core purpose, and the agent is designed to win. In this talk, Marc Brooker draws on two decades of building safety-critical systems at AWS to argue that agent safety is fundamentally an architecture problem, not an alignment problem. The solution isn't a smarter agent, it's a dumber box. By placing agents inside secure execution environments with a single, policy-controlled gateway to the outside world, we can enforce deterministic constraints that hold regardless of what the agent "thinks." Using policy languages like Cedar, teams can write rules — "a refund must not exceed the original purchase price" — that are mathematically verified, not probabilistically hoped for. As models grow more capable and agents take on longer-running, higher-stakes tasks, this matters more, not less. The answer isn't to stop summoning, it's to build a better box.
+The last 18 months have seen incredible progress in the capabilities of agents for knowledge work and development. In practice, customers care just as much about what agents are bad at as what they're great at. In this talk, I'll look at some of the investments we're making at AWS to make agents 'right' and share some thoughts and research and development in that direction.
+
+
+**9:40 AM - 10:35 AM**  
+Panel Discussion: Future of Software Engineering
+_Michele Catasta (Replit), Dan Maloney (LandingAI), Richmond Alake (Oracle), Joe Reis (Practical Data Media), Marina Mogilko (Silicon Valley Girl, Moderator)_
 
 
 **10:35 AM - 10:50 AM**  
@@ -38,13 +43,9 @@ _Emma McGrattan (Actian)_
 Artificial intelligence is entering its production era, and a major architectural shift is underway. The first generation of AI assumed centralized cloud environments. But real-world deployments reveal a different reality: AI systems must increasingly operate across distributed environments. Data sovereignty regulations limit where data can move. Latency-sensitive applications require responses in milliseconds. And enterprise data already spans cloud platforms, on-prem systems, and operational environments at the edge. In this keynote, Emma McGrattan, CTO of Actian, explores how this shift toward distributed AI is changing the role of vector databases. Rather than operating as centralized services, vector databases are increasingly deployed across hybrid environments to support real-world AI applications. Through examples drawn from production AI systems, the session highlights how deployment topology — cloud, on-prem, or edge — is becoming a critical design decision for modern AI architectures.
 
 
-**9:40 AM - 10:35 AM**  
-Panel Discussion: Future of Software Engineering
-_Michele Catasta (Replit), Dan Maloney (LandingAI), Richmond Alake (Oracle), Joe Reis (Practical Data Media), Marina Mogilko (Silicon Valley Girl, Moderator)_
-
-
 **10:50 AM - 11:05 AM**  
-Keynote (Google)
+Research to Reality
+_Paige Bailey (Google DeepMind)_
 
 
 **11:05 AM - 11:25 AM**  
