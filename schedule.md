@@ -243,7 +243,7 @@ AI assistants like Claude, ChatGPT, and Cursor are transforming how we work, but
 
 
 **11:00 AM - 11:20 AM** · 20 min  
-Agents with wallets? Putting 25,000 tools on x402
+Agents with Wallets? Putting 25,000 Tools on x402
 _Ondra Urban (Apify)_
 
 Every serious agent will eventually need to buy tools, data or resources. Today that means hardcoded API keys, shared credit cards, or looping in a human. x402, Coinbase's open protocol built on HTTP 402, claims to be one of the strongest candidates to fix this. This talk covers what we learned shipping x402 to Apify's 25,000 Actors: why the "exact" payment scheme breaks on usage-based pricing, the refund-based workaround we run in production, why handing an agent your private key is a terrible idea, and how mcpc, the open-source MCP CLI we built, keeps wallets out of LLM context.
@@ -313,7 +313,7 @@ Andrew K. Davies Harmony8 What if your AI's memory was mathematically verifiable
 
 
 **2:15 PM - 2:55 PM** · 40 min · _Stage 2_  
-My agent can't read a PDF?
+My Agent Can't Read a PDF?
 _Jerry Liu (LlamaIndex)_
 
 The future of automating knowledge work depends on AI agents that can reliably read and understand documents — but today's agents struggle with complex layouts, tables, and visual elements. This talk explores why document parsing remains a critical bottleneck for agentic workflows and introduces new open-source innovations to address it, including ParseBench, a benchmark for evaluating document OCR quality for AI agents, and LiteParse, a fast VLM-free parser. It also covers LlamaParse, purpose-built to deliver the best agentic understanding of complex documents at scale.
