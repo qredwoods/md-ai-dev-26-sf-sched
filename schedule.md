@@ -364,10 +364,10 @@ _Or Dagan (AI21 Labs)_
 Most agentic systems rely on hardcoded heuristics to navigate execution decisions (e.g. which models, tools, and test-time compute scaling approaches to use) leading to efficiency leakage across cost, latency and accuracy. AI21 Maestro optimizes agents by learning to predict success, cost and latency probabilities across diverse actions and contexts, and driving runtime orchestration that intelligently navigates the full agentic action space. We will demonstrate how this approach yields state-of-the-art results and pareto frontier on challenging agentic benchmarks, as well as the process required to optimize production agents.
 
 **4:05 PM - 4:35 PM** · 30 min · _Stage 3_  
-Why Your AI Agent Forgets What It's Doing (and the 3 Systems That Fix It)
-_Tony Loehr (Cline)_
+Evals Are Broken, Use Them Anyway
+_Ara Khan (Cline)_
 
-AI coding agents degrade in performance as tasks get longer. If your model is 95% accurate on turn one, it's down to 70% by turn ten — this isn't because the model got dumber, but because the context got noisier. This talk breaks down the three interlocking systems we built at Cline (deep planning, persistent focus chains, and automatic context compression) which let agents maintain coherence across complex, long-horizon tasks, and shows you how to apply the same principles to any agentic system you're building.
+This talk explains why I went from "evals are useless" to using them as a core part of my agent improvement loop. I share practical heuristics for interpreting, running, and creating evals, and why doing them anyway is better than pure "vibes".
 
 
 **5:00 PM - 5:20 PM** · 20 min · _Stage 1_  
