@@ -4,8 +4,8 @@ name: Watch schedule
 # Commits schedule.md only if it changed — git history becomes the changelog.
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+  # Conference ran Apr 27–29 2026; cron disabled post-event.
+  # Kept workflow_dispatch so the scraper can still be run manually.
   workflow_dispatch:
 
 permissions:
